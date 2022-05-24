@@ -5,7 +5,7 @@ Console.Title = "ADO.NET";
 
 var configuration = new DbConfiguration();
 
-var connectionString = configuration.GetConnectionString("ado");
+var connectionString = configuration.GetConnectionString("connString");
 
 if (string.IsNullOrEmpty(connectionString))
 {
@@ -75,7 +75,6 @@ try
 
     // Добавление параметра
     sqlCommandForInsertGoodPractice.Parameters.Add(sqlParamForName);
-
     affectedRows = sqlCommandForInsertBadPractice.ExecuteNonQuery();
 }
 catch (Exception ex)
