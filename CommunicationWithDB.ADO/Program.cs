@@ -22,13 +22,13 @@ try
     sqlConnection.Open();
     Console.WriteLine("SQL соединение открыто.");
 
-    // Добавление (аналогичный код для обновления / удаления
+    // Добавление (аналогичный код для обновления / удаления).
     var sqlCommand = sqlConnection.CreateCommand();
     sqlCommand.CommandText = "INSERT INTO Student VALUES ('TestUser', 1, '20220101')";
     var affectedRows = sqlCommand.ExecuteNonQuery();
     Console.WriteLine($"Число затронутых строк: {affectedRows}");
 
-    // Чтение
+    // Чтение.
     var sqlCommandForRead = sqlConnection.CreateCommand();
     sqlCommandForRead.CommandText = "SELECT * FROM Student";
     SqlDataReader reader = sqlCommandForRead.ExecuteReader();
@@ -55,7 +55,7 @@ try
     var count = sqlCommandForCount.ExecuteScalar();
     Console.WriteLine($"Полное число студентов: {count}");
 
-    // Есть два варианта параметризации запросов
+    // Есть два варианта параметризации запросов.
     var name = "Some Student Name";
 
     // Плохой вариант, так как позволяет получать и изменять данные при помощи механизма SQL-инъекций.
@@ -68,12 +68,12 @@ try
 
     affectedRows = sqlCommandForInsertBadPractice.ExecuteNonQuery();
 
-    // Хороший вариант, добавление SQL параметров
+    // Хороший вариант, добавление SQL параметров.
     sqlString = $"INSERT INTO Student VALUES (@name, 1, '20220101')";
     var sqlParamForName = new SqlParameter("@name", name);
     var sqlCommandForInsertGoodPractice = new SqlCommand(sqlString);
 
-    // Добавление параметра
+    // Добавление параметра.
     sqlCommandForInsertGoodPractice.Parameters.Add(sqlParamForName);
     affectedRows = sqlCommandForInsertBadPractice.ExecuteNonQuery();
 }

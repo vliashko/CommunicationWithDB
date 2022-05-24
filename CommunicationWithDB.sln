@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationWithDB.ADO", "CommunicationWithDB.ADO\CommunicationWithDB.ADO.csproj", "{CB5C08F0-BFF9-40AD-BD4E-0DFEC68D82FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationWithDB.ADO", "CommunicationWithDB.ADO\CommunicationWithDB.ADO.csproj", "{CB5C08F0-BFF9-40AD-BD4E-0DFEC68D82FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationWithDB.Common", "CommunicationWithDB.Common\CommunicationWithDB.Common.csproj", "{BFB0F584-C2B0-48A6-82A4-6674EEE72452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunicationWithDB.Common", "CommunicationWithDB.Common\CommunicationWithDB.Common.csproj", "{BFB0F584-C2B0-48A6-82A4-6674EEE72452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationWithDB.Dapper", "CommunicationWithDB.Dapper\CommunicationWithDB.Dapper.csproj", "{C3EFFB04-2E9A-41D5-8FC0-13FC0D806F1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BFB0F584-C2B0-48A6-82A4-6674EEE72452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFB0F584-C2B0-48A6-82A4-6674EEE72452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFB0F584-C2B0-48A6-82A4-6674EEE72452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EFFB04-2E9A-41D5-8FC0-13FC0D806F1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EFFB04-2E9A-41D5-8FC0-13FC0D806F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EFFB04-2E9A-41D5-8FC0-13FC0D806F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EFFB04-2E9A-41D5-8FC0-13FC0D806F1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
