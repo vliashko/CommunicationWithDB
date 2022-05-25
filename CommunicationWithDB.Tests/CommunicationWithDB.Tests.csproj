@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommunicationWithDB.ADO\CommunicationWithDB.ADO.csproj" />
+    <ProjectReference Include="..\CommunicationWithDB.Dapper\CommunicationWithDB.Dapper.csproj" />
+    <ProjectReference Include="..\CommunicationWithDB.EF\CommunicationWithDB.EF.csproj" />
+  </ItemGroup>
+
+</Project>
