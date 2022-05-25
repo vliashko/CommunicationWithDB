@@ -5,4 +5,6 @@ using CommunicationWithDB.Tests;
 Console.WriteLine("Hello, World!");
 
 
-BenchmarkRunner.Run<Benchmark>();
+BenchmarkRunner.Run<BenchmarkEF>();
+BenchmarkRunner.Run<BenchmarkAdo>(); 
+BenchmarkRunner.Run<BenchmarkDapper>();
